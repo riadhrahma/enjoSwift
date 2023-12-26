@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+protocol AuthRepositories {
+    func login(userName : String , password : String,  result : @escaping (String? , Any?)-> Void) async
+    
+    func fetchUserData(completion: @escaping (Result<UserResponse, Error>) -> Void) async
+}

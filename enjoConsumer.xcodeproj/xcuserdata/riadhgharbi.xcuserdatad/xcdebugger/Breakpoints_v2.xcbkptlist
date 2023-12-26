@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "37CE8A2C-DD5F-49F1-B0BB-2E550D54FEA1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AB7D799-983B-420B-A80D-B855FFB867D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enjoConsumerTests/enjoConsumerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C91FF748-752B-4265-A62C-4444304CBC09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enjoConsumerTests/enjoConsumerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "setUpWithError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DD2897A-7BD5-40A6-932B-801FFD1927E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enjoConsumerTests/enjoConsumerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "enjoConsumerTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5DD2897A-7BD5-40A6-932B-801FFD1927E0 - 787e12df6b54d0e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "enjoConsumerTests.enjoConsumerTests.testPerformanceExample() throws -&gt; ()"
+                  moduleName = "enjoConsumerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riadhgharbi/IosProjects/enjoConsumer/enjoConsumerTests/enjoConsumerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "5DD2897A-7BD5-40A6-932B-801FFD1927E0 - 787e12df6b54d087"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "enjoConsumerTests.enjoConsumerTests.testPerformanceExample() throws -&gt; ()"
+                  moduleName = "enjoConsumerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/riadhgharbi/IosProjects/enjoConsumer/enjoConsumerTests/enjoConsumerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct LoignResultView: View {
+struct LoginResultView: View {
+    
+     var controller: LoginController<AuthState>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text( String(describing : controller.state))
+            .font(
+                Font.custom("Manrope", size: 16)
+                    .weight(.semibold)
+            )
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color(red: 0.24, green: 0.24, blue: 0.24))
     }
 }
 
+
 #Preview {
-    LoignResultView()
+    LoginResultView(controller:LoginController<AuthState>())
 }

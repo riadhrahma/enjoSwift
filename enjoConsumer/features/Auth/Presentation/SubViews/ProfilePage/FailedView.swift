@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct FailedView: View {
+    let loginController : LoginController<AuthState>
+    let state : FailedLoginState
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Button(action: {
+                Task{
+                  await   loginController.FetchUserData()
+                }
+                
+            }, label: {
+                Text("Failed with " + state.message + "click to Retry").foregroundColor(.white)
+            })
+            
+      
+        }
     }
 }
 
-#Preview {
-    FailedView()
-}

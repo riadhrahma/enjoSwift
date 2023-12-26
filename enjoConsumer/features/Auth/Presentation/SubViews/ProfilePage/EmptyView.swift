@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct EmptyView: View {
+    var loginController : LoginController<AuthState>
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Button(action: {
+                Task{
+                  await   loginController.FetchUserData()
+                }
+            }){
+                Text("Fetch Data").foregroundColor(.white).frame(width: 200)
+            }
+            
+            
+            
+        }.frame( width: 200,height: 200)
     }
 }
 
-#Preview {
-    EmptyView()
-}

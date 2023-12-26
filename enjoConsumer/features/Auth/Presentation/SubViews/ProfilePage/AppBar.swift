@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct AppBar: View {
+ var loginController: LoginController<AuthState>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Button(action : {
+              
+            }){
+                Image(systemName: "arrowshape.backward.fill").foregroundColor(.white).padding()
+            }
+            
+            
+            
+            
+            Spacer()
+            Text("Profile").foregroundStyle(.background).padding()
+            Spacer()
+            Button(action : {
+                Task{
+                    await loginController.FetchUserData(
+                        )
+                }
+            }){
+                Image(systemName: "repeat").foregroundColor(.white).padding()
+            }
+            
+           
+            
+            
+        }
     }
 }
 
-#Preview {
-    AppBar()
-}
+

@@ -8,11 +8,39 @@
 import SwiftUI
 
 struct ProfilePage: View {
+    @ObservedObject var loginController: LoginController = LoginController<AuthState>()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            switch loginController.state {
+            case is LoadingState :
+                LoadingView()
+            case is SuccussLoginState:
+                VStack {
+                    ProfileStaticView(loginController: loginController, userData: (loginController.state as! SuccussLoginState).userData )
+                    
+                  
+                }
+                
+            case is FailedLoginState :
+                FailedView(loginController: loginController, state: (loginController.state as? FailedLoginState)!)
+                
+            
+            default:
+                EmptyView(loginController: loginController)
+            }
+            
+            
+           
+           
+        }.background(.blue).navigationBarHidden(true).cornerRadius(20)
+      
+            Spacer()
+       
+        
     }
 }
 
 #Preview {
-    ProfilePage()
+    ProfilePage().background(.blue)
 }
