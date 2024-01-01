@@ -32,6 +32,8 @@ struct ProfileStaticView: View {
                 }
             }
             
+        
+            
            
                 List {
                             if let results = userData.results {
@@ -40,6 +42,7 @@ struct ProfileStaticView: View {
                                 }
                             }
                         }
+           
                 
             
             

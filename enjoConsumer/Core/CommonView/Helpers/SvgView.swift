@@ -7,12 +7,17 @@
 
 import SwiftUI
 
-struct SvgView: View {
+
+struct Svg:  View {
+    let fileName : String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("Star")
     }
+    
 }
 
+
 #Preview {
-    SvgView()
+    Svg(fileName: "Star")
 }

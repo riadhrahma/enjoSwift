@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D39E3102B405C7E00D5D861 /* CourseItemWithLeftImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39E30F2B405C7E00D5D861 /* CourseItemWithLeftImage.swift */; };
 		3D6869782B37390F006BE356 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6869772B37390F006BE356 /* UserResponse.swift */; };
 		3D68697A2B373E16006BE356 /* FailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6869792B373E16006BE356 /* FailedView.swift */; };
 		3D68697D2B3745F5006BE356 /* OptionallyDecodable in Frameworks */ = {isa = PBXBuildFile; productRef = 3D68697C2B3745F5006BE356 /* OptionallyDecodable */; };
@@ -32,6 +33,12 @@
 		3DC9E24D2B2B16C100DBA476 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9E24C2B2B16C100DBA476 /* LoginController.swift */; };
 		3DC9E24F2B2B175E00DBA476 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC9E24E2B2B175E00DBA476 /* AuthState.swift */; };
 		3DCABCD62B2E0260001C5D9C /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 3DCABCD52B2E0260001C5D9C /* BottomSheet */; };
+		3DDD3E472B40297400409509 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3E462B40297400409509 /* CourseItem.swift */; };
+		3DDD3E482B40297400409509 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3E462B40297400409509 /* CourseItem.swift */; };
+		3DDD3E572B403C2600409509 /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3E562B403C2600409509 /* TextStyles.swift */; };
+		3DDD3E582B403C2600409509 /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3E562B403C2600409509 /* TextStyles.swift */; };
+		3DDD3E5A2B4043BB00409509 /* CourseItemWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3E592B4043BB00409509 /* CourseItemWithImage.swift */; };
+		3DDD3E5B2B4043BB00409509 /* CourseItemWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3E592B4043BB00409509 /* CourseItemWithImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D39E30F2B405C7E00D5D861 /* CourseItemWithLeftImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItemWithLeftImage.swift; sourceTree = "<group>"; };
 		3D6869772B37390F006BE356 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		3D6869792B373E16006BE356 /* FailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedView.swift; sourceTree = "<group>"; };
 		3D87121F2B36EBD500CF3A91 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
@@ -77,6 +85,9 @@
 		3DC9E2492B2B156800DBA476 /* LoignResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoignResultView.swift; sourceTree = "<group>"; };
 		3DC9E24C2B2B16C100DBA476 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		3DC9E24E2B2B175E00DBA476 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		3DDD3E462B40297400409509 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		3DDD3E562B403C2600409509 /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+		3DDD3E592B4043BB00409509 /* CourseItemWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItemWithImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D39E3112B405C8700D5D861 /* Style1 */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD3E462B40297400409509 /* CourseItem.swift */,
+				3DDD3E592B4043BB00409509 /* CourseItemWithImage.swift */,
+				3D39E30F2B405C7E00D5D861 /* CourseItemWithLeftImage.swift */,
+			);
+			path = Style1;
+			sourceTree = "<group>";
+		};
+		3D39E3122B405C9700D5D861 /* Style2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style2;
+			sourceTree = "<group>";
+		};
+		3D39E3132B405CA100D5D861 /* Style3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style3;
+			sourceTree = "<group>";
+		};
 		3D87121E2B36EBBA00CF3A91 /* ProfilePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,11 +185,11 @@
 		3DC9E2012B2B087700DBA476 /* enjoConsumer */ = {
 			isa = PBXGroup;
 			children = (
-				3DC9E2302B2B09DB00DBA476 /* features */,
+				3DC9E2062B2B087900DBA476 /* Assets.xcassets */,
+				3DC9E2042B2B087700DBA476 /* ContentView.swift */,
 				3DC9E22C2B2B08A900DBA476 /* Core */,
 				3DC9E2022B2B087700DBA476 /* enjoConsumerApp.swift */,
-				3DC9E2042B2B087700DBA476 /* ContentView.swift */,
-				3DC9E2062B2B087900DBA476 /* Assets.xcassets */,
+				3DC9E2302B2B09DB00DBA476 /* features */,
 				3DC9E2082B2B087900DBA476 /* Preview Content */,
 			);
 			path = enjoConsumer;
@@ -188,6 +223,7 @@
 		3DC9E22C2B2B08A900DBA476 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3DDD3E442B4028EB00409509 /* CommonView */,
 				3DC9E22D2B2B08CD00DBA476 /* Router */,
 			);
 			path = Core;
@@ -338,6 +374,41 @@
 			path = AuthController;
 			sourceTree = "<group>";
 		};
+		3DDD3E442B4028EB00409509 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD3E4A2B402AEB00409509 /* Helpers */,
+				3DDD3E452B40290500409509 /* Items */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		3DDD3E452B40290500409509 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3D39E3132B405CA100D5D861 /* Style3 */,
+				3D39E3122B405C9700D5D861 /* Style2 */,
+				3D39E3112B405C8700D5D861 /* Style1 */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		3DDD3E4A2B402AEB00409509 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD3E552B403BF400409509 /* TextStyles */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DDD3E552B403BF400409509 /* TextStyles */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD3E562B403C2600409509 /* TextStyles.swift */,
+			);
+			path = TextStyles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -484,6 +555,7 @@
 				3D8712272B3702B500CF3A91 /* EmptyView.swift in Sources */,
 				3DC9E2052B2B087700DBA476 /* ContentView.swift in Sources */,
 				3D8712252B37025A00CF3A91 /* LoadingView.swift in Sources */,
+				3D39E3102B405C7E00D5D861 /* CourseItemWithLeftImage.swift in Sources */,
 				3DC9E24A2B2B156800DBA476 /* LoignResultView.swift in Sources */,
 				3DC9E24D2B2B16C100DBA476 /* LoginController.swift in Sources */,
 				3D8712232B36EC5000CF3A91 /* AppBar.swift in Sources */,
@@ -491,10 +563,13 @@
 				3DC9E2032B2B087700DBA476 /* enjoConsumerApp.swift in Sources */,
 				3DC9E2472B2B136100DBA476 /* LoginPage.swift in Sources */,
 				3DC9E24F2B2B175E00DBA476 /* AuthState.swift in Sources */,
+				3DDD3E572B403C2600409509 /* TextStyles.swift in Sources */,
+				3DDD3E472B40297400409509 /* CourseItem.swift in Sources */,
 				3D68697A2B373E16006BE356 /* FailedView.swift in Sources */,
 				3D8712202B36EBD500CF3A91 /* ProfilePage.swift in Sources */,
 				3DC9E23F2B2B0BD700DBA476 /* AuthRemoteDataSource.swift in Sources */,
 				3DC9E22F2B2B08EC00DBA476 /* Router.swift in Sources */,
+				3DDD3E5A2B4043BB00409509 /* CourseItemWithImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,8 +585,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDD3E582B403C2600409509 /* TextStyles.swift in Sources */,
 				3DC9E2202B2B087900DBA476 /* enjoConsumerUITestsLaunchTests.swift in Sources */,
+				3DDD3E482B40297400409509 /* CourseItem.swift in Sources */,
 				3DC9E21E2B2B087900DBA476 /* enjoConsumerUITests.swift in Sources */,
+				3DDD3E5B2B4043BB00409509 /* CourseItemWithImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
