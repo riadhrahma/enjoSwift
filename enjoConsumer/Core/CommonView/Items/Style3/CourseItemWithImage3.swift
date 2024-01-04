@@ -14,12 +14,10 @@ struct CourseItemWithImage3: View {
                 // Typography / Regular / Text SM 12
                 Text("Declarative interfaces for any Apple Devices")
                     .apply(style: .sm12(isBold: false))
-                  .frame(width: 200, alignment: .topLeading)
+                    .paddingOnly(bottom : 6)
                 
                 // Typography / Bold / Text SM 12
-                Text("IDR 850.000")
-                    .apply(style: .sm12(isBold: true))
-                  .frame(width: 200, alignment: .topLeading)
+               
                 HStack{
                     Image("Star")
                     

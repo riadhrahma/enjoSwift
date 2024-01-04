@@ -9,7 +9,50 @@ import SwiftUI
 
 struct CourseItemWithLeftImage3: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image("ImagePreview").padding()
+            HStack {
+                VStack(alignment: .leading, spacing: 6){
+                    
+                    // Typography / Regular / Text SM 12
+                    Text("Declarative interfaces for any Apple Devices")
+                        .apply(style: .sm12(isBold: false)).paddingOnly(bottom : 6)
+                      
+                    
+                    // Typography / Bold / Text SM 12
+                    
+                    HStack{
+                        Image("Star")
+                        
+                        // Typography / Bold / Text XS 10
+                        Text("4.5")
+                            .apply(style: .xs10(isBold: true))
+                        
+                        Image("Separator")
+                        .frame(width: 3, height: 3)
+                        .background(Color(red: 0.57, green: 0.57, blue: 0.62))
+                        
+                        // Typography / Regular / Text XS 10
+                        Text("By Sarah William")
+                            .apply(style: .xs10(isBold: false))
+                        
+                        // Typography / Regular / Text XS 10
+                        Image("Separator")
+                        .frame(width: 3, height: 3)
+                        .background(Color(red: 0.57, green: 0.57, blue: 0.62))
+                        
+                        // Typography / Regular / Text XS 10
+                        Text("All Level")
+                            .apply(style: .xs10(isBold: false))
+                        
+                        Spacer()
+                    }
+                }
+                
+                
+                
+            }
+        }
     }
 }
 

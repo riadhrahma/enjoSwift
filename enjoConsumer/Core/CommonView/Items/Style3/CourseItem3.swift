@@ -16,9 +16,7 @@ struct CourseItem3: View {
               .frame(width: 200, alignment: .topLeading)
             
             // Typography / Bold / Text SM 12
-            Text("IDR 850.000")
-                .apply(style: .sm12(isBold: true))
-              .frame(width: 200, alignment: .topLeading)
+            
             HStack{
                 Image("Star")
                 

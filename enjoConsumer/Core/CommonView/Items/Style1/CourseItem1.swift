@@ -50,5 +50,5 @@ struct CourseItem1: View {
 }
 
 #Preview {
-    CourseItem1()
+    CourseItem1().padding()
 }

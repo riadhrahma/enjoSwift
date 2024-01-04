@@ -50,10 +50,10 @@ struct CourseItemWithImage1: View {
             
             Image("ImagePreview")
             
-        }.padding()
+        }
     }
 }
 
 #Preview {
-    CourseItemWithImage1()
+    CourseItemWithImage1().padding()
 }
