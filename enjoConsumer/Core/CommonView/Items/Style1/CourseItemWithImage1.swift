@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CourseItemWithImage: View {
+struct CourseItemWithImage1: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 6){
@@ -55,5 +55,5 @@ struct CourseItemWithImage: View {
 }
 
 #Preview {
-    CourseItemWithImage()
+    CourseItemWithImage1()
 }

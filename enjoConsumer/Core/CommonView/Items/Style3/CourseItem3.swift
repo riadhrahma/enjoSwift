@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CourseItem: View {
+struct CourseItem3: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6){
             // Typography / Regular / Text SM 12
@@ -50,5 +50,5 @@ struct CourseItem: View {
 }
 
 #Preview {
-    CourseItem()
+    CourseItem3()
 }
