@@ -9,7 +9,24 @@ import SwiftUI
 
 struct PreBuidCard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            CourseItemWithImage2()
+            
+            HStack{
+                CardProgressWithIcon()
+                Spacer()
+                CardProgressWithIcon().paddingOnly(right : 10)
+            }.paddingSymmetric(padding: .vertical(padding: 15))
+            ProgressBar(progressValue: 0.2).frame(height: 15)
+            
+            HStack(alignment: .firstTextBaseline){
+                CardDetails()
+                Spacer()
+                CardDetails().paddingOnly(right: 20)
+            }.paddingSymmetric(padding: .vertical(padding: 15))
+             
+            
+        }.padding().background(Color(red: 0.99, green: 0.99, blue: 1)).cornerRadius(10)
     }
 }
 

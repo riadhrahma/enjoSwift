@@ -10,12 +10,12 @@ import SwiftUI
 
 // Enum to define different text styles
 enum TextStyles {
-    case xs10(isBold: Bool)
-    case sm12(isBold: Bool)
-    case default14(isBold: Bool)
-    case title1(isBold: Bool)
-    case title2(isBold: Bool)
-    case title3(isBold: Bool)
+    case xs10(isBold: Bool = false , color : Color = .base1)
+    case sm12(isBold: Bool = false , color : Color = .base1)
+    case default14(isBold: Bool = false , color : Color = .base1)
+    case title1(isBold: Bool = false , color : Color = .base1)
+    case title2(isBold: Bool = false , color : Color = .base1)
+    case title3(isBold: Bool = false , color : Color = .base1)
 }
 
 extension Text {
@@ -27,38 +27,40 @@ extension Text {
         return self.fontWeight(.regular)
     }
     
+    
+    
     // Function to apply the specified text style
     func apply(style: TextStyles) -> Text {
         switch style {
-        case .xs10(let isBold):
+        case .xs10(let isBold, let color):
             return self
                 .font(Font.custom("DM Sans", size: 10))
-                .foregroundColor(.base1)
+                .foregroundColor(color)
                 .boldHandling(isBold: isBold)
-        case .sm12(let isBold):
+        case .sm12(let isBold, let color):
             return self
                 .font(Font.custom("DM Sans", size: 12))
-                .foregroundColor(.base1)
+                .foregroundColor(color)
                 .boldHandling(isBold: isBold)
-        case .default14(let isBold):
+        case .default14(let isBold, let color):
             return self
                 .font(Font.custom("DM Sans", size: 14))
-                .foregroundColor(.base1)
+                .foregroundColor(color)
                 .boldHandling(isBold: isBold)
-        case .title1(let isBold):
+        case .title1(let isBold, let color):
             return self
-                .font(Font.custom("DM Sans", size: 16))
-                .foregroundColor(.base1)
+                .font(Font.custom("DM Sans", size: 16)) 
+                .foregroundColor(color)
                 .boldHandling(isBold: isBold)
-        case .title2(let isBold):
+        case .title2(let isBold, let color):
             return self
                 .font(Font.custom("DM Sans", size: 20))
-                .foregroundColor(.base1)
+                .foregroundColor(color)
                 .boldHandling(isBold: isBold)
-        case .title3(let isBold):
+        case .title3(let isBold, let color):
             return self
                 .font(Font.custom("DM Sans", size: 24))
-                .foregroundColor(.base1)
+                .foregroundColor(color)
                 .boldHandling(isBold: isBold)
         }
     }

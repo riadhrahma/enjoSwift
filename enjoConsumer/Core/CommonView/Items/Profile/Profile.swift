@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct Profile: View {
+    var image : String 
+    var icon : Bool
+    var title : String
+    var subTitle : String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Image(image).aspectRatio(contentMode: .fill)
+                .frame(width: 40, height: 40) // Adjust the size as needed
+                .clipShape(Circle())
+            
+            VStack(alignment : .leading){
+                Text(title).apply(style: .sm12(isBold: false, color: .base3))
+                Text(subTitle).apply(style: .default14(isBold: false, color: .base1))
+            }
+            Spacer()
+            if icon {
+                Image(systemName: "bell")
+            }
+        }
     }
 }
 
 #Preview {
-    Profile()
+    Profile(image :"ProfilePicture",icon: false, title: "Welcome back", subTitle: "Poetri Lazuardi ")
 }

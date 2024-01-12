@@ -7,19 +7,22 @@
 
 import SwiftUI
 
-struct CardProgress: View {
+struct CardProgressWithIcon: View {
     var body: some View {
        
-        VStack(alignment: .leading, spacing: 4) {
-            Text("Current Progress")
-                  .apply(style: .xs10( color: .base3))
-            Text("50%")
-                  .apply(style: .default14(  color: .base1))
-        }
+        HStack {
+            Image("award").padding().background(Color(red: 0.95, green: 0.95, blue: 0.98)).cornerRadius(10).paddingOnly(right: 10)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Current Progress")
+                      .apply(style: .xs10( color: .base3))
+                Text("50%")
+                      .apply(style: .default14(   color: .base1))
+            }
+        } 
         
     }
 }
 
 #Preview {
-    CardProgress()
+    CardProgressWithIcon()
 }

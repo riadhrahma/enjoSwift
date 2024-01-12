@@ -9,10 +9,13 @@ import SwiftUI
 
 struct Separator: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Spacer()
+            
+        }.frame(height: 1).background(.base3)
     }
 }
 
 #Preview {
-    Separator()
+    Separator().padding()
 }

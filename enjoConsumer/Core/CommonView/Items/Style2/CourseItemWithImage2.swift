@@ -19,17 +19,17 @@ struct CourseItemWithImage2: View {
                 // Typography / Bold / Text SM 12
                 Text("IDR 850.000")
                     .apply(style: .sm12(isBold: true))
-                  .frame(width: 200, alignment: .topLeading)
+                  
                
             }
             Spacer()
             
-            Image("ImagePreview")
+            Image("ImagePreview").frame(width: 60, height: 60).scaledToFill()
             
-        }.padding()
+        }
     }
 }
 
 #Preview {
-    CourseItemWithImage2()
+    CourseItemWithImage2().padding()
 }
